@@ -1,0 +1,148 @@
+/* || General styles*/
+ /* colors for albums #EFDD32  #EBF5CF  for fonts #F7FCE8 for sometimg important 
+
+ */
+
+
+
+
+
+@font-face {
+    font-family: 'futurabold';
+    src: url('futura_bold_font-webfont.woff2') format('woff2'),
+         url('futura_bold_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+html{
+    height: 100%;
+    font-size: 10px;
+    margin: 0;
+}
+body {
+    height: 100%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+       background-repeat: no-repeat;
+      background-attachment: fixed;
+    /*fallback*/
+       margin: 0;
+}
+
+/* || Typography*/ 
+
+h1 {
+    font-family: 'futurabold', Arial, Helvetica, sans-serif ;
+    font-size: calc(3rem + 5vw);
+    margin: 0.5rem auto;
+    color: #27004f;
+    text-shadow: 0.8rem 0.5rem 1.8rem  #EFDD32, 0.1rem 0.2rem 0.2rem #f12b08;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+/* || header and main nav*/ 
+
+/* || Main content */ 
+
+/* || Footer*/ 
+
+/* || Utilities*/
+
+
+.ListenOn{
+    display: inline-block;
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    text-indent: -9000px; 
+    height: 2.5rem; 
+    width: 8rem;
+    
+    margin: 0 auto;
+}
+header a:first-of-type {
+    background-image: url(spotify1.png); 
+}
+header a:nth-of-type(2){
+    background-image: url(deezer.png); 
+}
+
+header a:nth-of-type(3){
+    background-image: url(apple\ music.png); 
+
+}
+
+
+header  {
+    text-align: center;
+}
+
+.Listen {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+@media screen and (min-width: 60rem) {
+   header{
+ display: flex;
+   }
+   h1{
+       display: inline;
+       align-self: center;
+   }
+    .Listen {
+        display: flex;
+ flex-direction: column;
+        align-items: flex-end;
+                gap: 0.1rem;
+    }
+}
+p,h2 {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(0.1rem + 0.5vw);
+    padding: 0.3rem;
+    margin: 0;
+    
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) ;
+    gap: calc(0.1rem + 1vw);
+    margin: calc(0.1rem + 1vw);
+ }
+ .album {
+     background: rgba(255, 255, 255, 0.2);
+     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+     padding: 1rem;
+     display: grid;
+     grid-template-columns: 150px 1fr;
+     align-items: center;
+     gap: 5px;
+
+ }
+ 
+ img{
+     width: 100%;
+     filter: drop-shadow(-0.5rem 0.4rem 1.5rem  #EBF5CF);
+ }
+
+ h2{
+     font-size: 2.2rem;
+     color:  #021F2D;
+ }
+ .album_author{
+     font-size: 1.3rem;
+     font-weight: 600;
+ }
+ .album_description{
+    font-size: 1.4rem;
+ }
